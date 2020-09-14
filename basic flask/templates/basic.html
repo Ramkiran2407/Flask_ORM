@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16" />
+        <title>My html</title>
+    </head>
+    <style>
+        input[type=text], input[type=password] {  
+            width: auto;
+            padding: 6px 6px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+            
+            /* left:45%;
+            top:50%; */
+        }
+        body{
+            background-position: center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height:100vh;
+
+        }
+        submit{
+            opacity: 0.8;
+            position: relative;
+            /* left:0%;
+            top:50%; */
+            width: auto;
+        }
+        .box{
+            position:absolute;
+            left:40%;
+            top:50%;
+            transform: translate(0%,0%);
+            background-color: rgba(139, 139, 139, 0.329);
+            border-radius:2px;
+            padding:70px 70px;
+        }
+    </style>
+    <body background="login1.jpg">
+        <h3 align="center"  style="font-family: Ink free;  font-size: 750%; color: bisque"> Travelling </h3>
+        <marquee direction="left" scrollamount="15" style="font-family: Ink free; font-size: 200%; color: rgb(231, 228, 9);">
+                Smooth seas do not make skillful sailors.</marquee>
+		
+        <div class="box">
+
+      <form action = "http://localhost:5002/login" method = "post">
+
+
+				<input type="text" name="username" required placeholder="Email Address"><br>
+				<input type="password" name="password" required placeholder="Password"><br>
+				<input type="submit" style="border-radius: 5px"></input>
+			</form>
+        </div>
+		
+    </body>
+</html>
